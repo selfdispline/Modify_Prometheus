@@ -13,4 +13,5 @@ target_link_libraries(rc_control ${catkin_LIBRARIES})add_dependencies
 
 3、将px4_sender.cpp替换成这个，然后进行编译，此cpp文件目的是测试控制算法，相比之前添加了误差，也就是ref-rel便于分析，方法：利用博客写的记录话题方法分析
 
+4、增加3dlidar_plugin,将文件放置/opt/ros/melodic/lib路径下，运行roslaunch prometheus_gazebo sitl_astar_3dlidar.launch就可正常运行
 
